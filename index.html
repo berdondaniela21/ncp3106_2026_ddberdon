@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANI. — Daniela Berdon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ══════════════════════════════════════
+         NAVIGATION
+    ══════════════════════════════════════ -->
+    <nav class="navbar">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#pictures">PICTURES</a></li>
+            <li><a href="#hobbies">HOBBIES</a></li>
+            <li><a href="#interests">INTERESTS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#socials">SOCIALS</a></li>
+        </ul>
+        <div class="nav-brand">DANI.</div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <header class="hero">
+        <!-- Baybayin bg text -->
+        <div class="hero-bg-text">ᜇᜈᜁᜎ ᜊᜒᜇᜇᜓᜈ᜔</div>
+
+        <!-- Jarvis: scan line -->
+        <div class="scan-line"></div>
+
+        <!-- Jarvis: floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <!-- Jarvis: arc ring decorations (top-right corner) -->
+        <div class="arc-cluster">
+            <div class="arc arc-a"></div>
+            <div class="arc arc-b"></div>
+            <div class="arc arc-c"></div>
+            <div class="arc-center-dot"></div>
+        </div>
+
+        <!-- Jarvis: bottom-left wireframe -->
+        <div class="hero-wireframe"></div>
+
+        <!-- Photo: sits behind text -->
+        <div class="hero-photo-wrap" id="heroPhotoWrap">
+            <img src="assets/profilePicture.png" alt="Daniela Berdon" class="hero-img"
+                 onerror="document.getElementById('heroPhotoWrap').classList.add('no-photo')">
+        </div>
+
+        <!-- Text: in front of photo -->
+        <div class="hero-inner">
+            <h1 class="hero-name">
+                <span class="name-first">DANIELA</span>
+                <span class="name-last" id="heroLastName"></span>
+                <span class="name-cursor" id="nameCursor">|</span>
+            </h1>
+            <div class="hero-bottom">
+                <p class="hero-bio">
+                    I am a passionate third-year <strong>Computer Engineering student</strong>
+                    at the <strong>University of the East</strong>, Manila Campus, currently
+                    honing my skills to become an exceptional <strong>software
+                    engineer</strong>. Living in the Philippines, I embrace both the
+                    challenges and opportunities that come with pursuing a career in
+                    technology.
+                </p>
+                <div class="hero-connector">
+                    <span class="connector-dot"></span>
+                    <span class="connector-line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ══════════════════════════════════════
+         ABOUT ME
+    ══════════════════════════════════════ -->
+    <section id="about" class="about">
+        <div class="section-title-bar">
+            <hr><span>ABOUT ME</span><hr>
+        </div>
+        <div class="about-cards">
+            <div class="info-card hud-card">
+                <h3>BASIC DETAILS</h3>
+                <dl>
+                    <dt>FULL NAME:</dt>    <dd>DANIELA DIONISIO BERDON</dd>
+                    <dt>DATE OF BIRTH:</dt><dd>MAY 21, 2003</dd>
+                    <dt>NATIONALITY:</dt>  <dd>FILIPINO</dd>
+                    <dt>LANGUAGES:</dt>    <dd>TAGALOG, ENGLISH</dd>
+                </dl>
+            </div>
+            <div class="info-card hud-card">
+                <h3>EDUCATION</h3>
+                <dl>
+                    <dt>UNIVERSITY:</dt>          <dd>UNIVERSITY OF THE EAST — MANILA CAMPUS (CURRENT)</dd>
+                    <dt>PROGRAM:</dt>             <dd>BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</dd>
+                    <dt>CURRENT YEAR LEVEL:</dt>  <dd>3RD YEAR LEVEL</dd>
+                </dl>
+            </div>
+            <div class="info-card hud-card">
+                <h3>SKILLS</h3>
+                <div class="tag-group">
+                    <span class="tag">PYTHON</span>
+                    <span class="tag">JAVA</span>
+                    <span class="tag">UI/UX DESIGN</span>
+                </div>
+                <h3 class="subhead">CURRENT<br>FOCUS</h3>
+                <div class="tag-group">
+                    <span class="tag">DATABASE SYSTEMS</span>
+                    <span class="tag">DATABASE STRUCTURES</span>
+                    <span class="tag">ALGORITHMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PICTURES
+    ══════════════════════════════════════ -->
+    <section id="pictures" class="pictures">
+        <div class="pictures-layout">
+            <div class="pictures-label">
+                <span>P</span><span>H</span><span>O</span><span>T</span><span>O</span><span>S</span>
+            </div>
+            <div class="pictures-scroll">
+                <div class="pic-item hud-card"><img src="assets/dani1.JPG" alt="Photo 1"></div>
+                <div class="pic-item hud-card"><img src="assets/dani2.JPG" alt="Photo 2"></div>
+                <div class="pic-item hud-card"><img src="assets/dani3.JPG" alt="Photo 3"></div>
+                <div class="pic-item hud-card"><img src="assets/dani4.JPG" alt="Photo 4"></div>
+                <div class="pic-item hud-card"><img src="assets/dani5.JPG" alt="Photo 5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         HOBBIES
+    ══════════════════════════════════════ -->
+    <section id="hobbies" class="labeled-section">
+        <div class="labeled-inner">
+            <div class="dark-pill">
+                <div class="hobbies-scroll">
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby1.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">PLAYING DRUMS</span>
+                        <p class="hobby-desc">Finding rhythm and expressing energy through beats and percussion.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby2.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">PLAYING GUITAR</span>
+                        <p class="hobby-desc">Strumming melodies and exploring music through strings.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby3.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">COOKING</span>
+                        <p class="hobby-desc">Experimenting with flavors and creating dishes from scratch.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby4.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">PLAYING GAMES</span>
+                        <p class="hobby-desc">Diving into virtual worlds and sharpening strategic thinking.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby5.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">PHOTOGRAPHY</span>
+                        <p class="hobby-desc">Capturing moments and telling stories through the lens.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby6.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">WATCHING FILMS</span>
+                        <p class="hobby-desc">Exploring different worlds and perspectives through cinema.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby7.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">READING</span>
+                        <p class="hobby-desc">Diving into stories, ideas, and knowledge one page at a time.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby8.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">DRAWING</span>
+                        <p class="hobby-desc">Sketching ideas and turning imagination into visual art.</p>
+                    </div>
+                    <div class="hobby-card hud-card">
+                        <div class="hobby-img-box"><img src="hobby9.jpg" alt="" onerror="this.style.display='none'"></div>
+                        <span class="hobby-name">LISTENING TO MUSIC</span>
+                        <p class="hobby-desc">Finding emotion and energy in every beat and melody.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-label">
+                <span>H</span><span>O</span><span>B</span><span>B</span><span>I</span><span>E</span><span>S</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         INTERESTS
+    ══════════════════════════════════════ -->
+    <section id="interests" class="labeled-section">
+        <div class="labeled-inner">
+            <div class="side-label">
+                <span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>E</span><span>S</span><span>T</span><span>S</span>
+            </div>
+            <div class="dark-pill">
+                <div class="inner-grid">
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2"/><path d="M15 2v2"/><path d="M9 20v2"/><path d="M15 20v2"/><path d="M20 9h2"/><path d="M20 15h2"/><path d="M2 9h2"/><path d="M2 15h2"/></svg></span>
+                        <strong>ARTIFICIAL INTELLIGENCE</strong>
+                        <p>Exploring how machines learn, think, and solve complex real-world problems.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+                        <strong>UI/UX & PRODUCT DESIGN</strong>
+                        <p>Crafting interfaces that feel intuitive, beautiful, and human-centered.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+                        <strong>MUSIC TECHNOLOGY</strong>
+                        <p>The intersection of software and sound — digital audio, synthesis, and music apps.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></span>
+                        <strong>ROBOTICS</strong>
+                        <p>Bridging code and hardware to build machines that sense, move, and act.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                        <strong>WEB DEVELOPMENT</strong>
+                        <p>Building accessible, performant, and visually rich experiences for the browser.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></span>
+                        <strong>DATABASE SYSTEMS</strong>
+                        <p>How data is structured, stored, queried, and kept reliable at scale.</p>
+                    </div>
+                    <div class="inner-card hud-card">
+                        <span class="inner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+                        <strong>FILM & MEDIA</strong>
+                        <p>Storytelling through visuals — cinematography, editing, and the language of cinema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════ -->
+    <section id="projects" class="labeled-section">
+        <div class="labeled-inner">
+            <div class="dark-pill">
+                <div class="inner-grid">
+                    <div class="inner-card hud-card has-thumb" tabindex="0" role="button"
+                         data-tag="KOTLIN" data-title="ORACLE — MRT-3 TRACKER"
+                         data-desc="Android app for MRT-3 commuters — live fare matrix, GPS tracking &amp; multi-line support, built with Kotlin &amp; Compose."
+                         data-desc-collab="Collaborated with a team of 5 Civil Engineering students from PUP to design and implement the app's core features, including real-time tracking and fare calculations."
+                         data-img="/assets/projects/oracle.png" aria-label="Oracle MRT-3 Tracker project">
+                        <div class="inner-thumb">
+                            <img src="assets/projects/oracle.png" alt="Oracle" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <span class="inner-tag">KOTLIN</span>
+                        <strong>ORACLE — MRT-3 TRACKER</strong>
+                    </div>
+                    <div class="inner-card hud-card has-thumb" tabindex="0" role="button"
+                         data-tag="WEB APP" data-title="DONMOTO REPAIR SHOP"
+                         data-desc="Web application for a local motorcycle repair shop — inventory management, customer portal, and appointment scheduling."
+                         data-img="/assets/projects/donmoto.png" aria-label="Donmoto Repair Shop project">
+                        <div class="inner-thumb">
+                            <img src="assets/projects/donmoto.png" alt="Donmoto" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <span class="inner-tag">WEB APP</span>
+                        <strong>DONMOTO REPAIR SHOP</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="side-label">
+                <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════ -->
+    <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  HOW TO UPDATE YOUR SKILLS                                   ║
+    ║  ─────────────────────────────────────────────────────────   ║
+    ║  For each skill bar, change TWO numbers to the same value:   ║
+    ║    1. data-skill="75"    ← the bar fill level (0–100)        ║
+    ║    2. --target: 75%      ← must match data-skill             ║
+    ║    3. the visible "75%"  ← the label shown on screen         ║
+    ║                                                              ║
+    ║  For goals, change the class on each <li>:                   ║
+    ║    class="goal-item"        → upcoming (not started)         ║
+    ║    class="goal-item active" → in progress                    ║
+    ║    class="goal-item done"   → completed ✓                    ║
+    ╚══════════════════════════════════════════════════════════════╝
+    -->
+    <section id="skills" class="skills-section">
+        <div class="section-title-bar">
+            <hr><span>SKILLS</span><hr>
+        </div>
+
+        <div class="skills-layout">
+
+            <!-- LEFT: Programming skill bars -->
+            <div class="skills-bars-wrap">
+                <h3 class="skills-sub-title">PROGRAMMING SKILLS</h3>
+
+                <div class="skill-item fade-up" data-skill="25">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML / CSS</span>
+                        <span class="skill-pct">25%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-up" data-skill="20">
+                    <div class="skill-header">
+                        <span class="skill-name">PYTHON</span>
+                        <span class="skill-pct">20%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-up" data-skill="40">
+                    <div class="skill-header">
+                        <span class="skill-name">UI / UX DESIGN</span>
+                        <span class="skill-pct">40%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 40%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-up" data-skill="10">
+                    <div class="skill-header">
+                        <span class="skill-name">JAVA</span>
+                        <span class="skill-pct">10%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 10%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-up" data-skill="5">
+                    <div class="skill-header">
+                        <span class="skill-name">C / C++</span>
+                        <span class="skill-pct">5%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 5%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item fade-up" data-skill="15">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL / DATABASE</span>
+                        <span class="skill-pct">15%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" style="--target: 15%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: SE Goals roadmap -->
+            <div class="skills-goals-wrap">
+                <h3 class="skills-sub-title">SOFTWARE ENGINEERING GOALS</h3>
+
+                <ul class="goal-list">
+                    <li class="goal-item done">
+                        <span class="goal-icon">✓</span>
+                        <div class="goal-text">
+                            <strong>Learn Python fundamentals</strong>
+                            <span>Variables, loops, functions &amp; OOP basics</span>
+                        </div>
+                    </li>
+                    <li class="goal-item done">
+                        <span class="goal-icon">✓</span>
+                        <div class="goal-text">
+                            <strong>Learn Java fundamentals</strong>
+                            <span>OOP principles &amp; data structures</span>
+                        </div>
+                    </li>
+                    <li class="goal-item done">
+                        <span class="goal-icon">✓</span>
+                        <div class="goal-text">
+                            <strong>Build first personal portfolio</strong>
+                            <span>HTML, CSS &amp; JavaScript — this site!</span>
+                        </div>
+                    </li>
+                    <li class="goal-item active">
+                        <span class="goal-icon">◉</span>
+                        <div class="goal-text">
+                            <strong>Master data structures &amp; algorithms</strong>
+                            <span>Sorting, searching, trees &amp; graphs</span>
+                        </div>
+                    </li>
+                    <li class="goal-item active">
+                        <span class="goal-icon">◉</span>
+                        <div class="goal-text">
+                            <strong>Database design &amp; SQL proficiency</strong>
+                            <span>Normalization, queries &amp; DBMS projects</span>
+                        </div>
+                    </li>
+                    <li class="goal-item">
+                        <span class="goal-icon">○</span>
+                        <div class="goal-text">
+                            <strong>Learn a frontend framework</strong>
+                            <span>React or Vue for dynamic applications</span>
+                        </div>
+                    </li>
+                    <li class="goal-item">
+                        <span class="goal-icon">○</span>
+                        <div class="goal-text">
+                            <strong>Build a full-stack web application</strong>
+                            <span>REST API + database + deployed frontend</span>
+                        </div>
+                    </li>
+                    <li class="goal-item">
+                        <span class="goal-icon">○</span>
+                        <div class="goal-text">
+                            <strong>Contribute to open source</strong>
+                            <span>First meaningful GitHub pull request</span>
+                        </div>
+                    </li>
+                    <li class="goal-item">
+                        <span class="goal-icon">○</span>
+                        <div class="goal-text">
+                            <strong>Land a software engineering internship</strong>
+                            <span>Apply skills in a professional environment</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SOCIAL MEDIA
+    ══════════════════════════════════════ -->
+    <section id="socials" class="socials">
+        <h2 class="socials-title">SOCIAL MEDIA</h2>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/daniela.berdon.3" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dnbn.aieo/" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/darkk0d3" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/daniela-b-304752195/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@dnbn_aieo" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@dnbn.aieo?is_from_webapp=1&sender_device=pc" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECT DETAIL MODAL
+    ══════════════════════════════════════ -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="project-modal-backdrop" data-close></div>
+        <div class="project-modal-card hud-card" role="dialog" aria-modal="true" aria-labelledby="project-modal-title-main">
+            <button class="project-modal-close" data-close aria-label="Close">&times;</button>
+            <div class="project-modal-media">
+                <img id="project-modal-img" src="" alt="">
+            </div>
+            <div class="project-modal-info">
+                <div class="project-modal-titles">
+                    <strong id="project-modal-title-main"></strong>
+                    <span id="project-modal-title-sub"></span>
+                </div>
+                <p id="project-modal-desc"></p>
+                <p id="project-modal-collab"></p>
+                <span id="project-modal-tag" class="inner-tag"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
