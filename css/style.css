@@ -320,4 +320,21 @@
   transform: rotate(45deg);
   display: inline-block;
 }
- 
+
+/* ===== About Image Diagram ===== */
+.page-hero-text{
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.program-col ul li{
+  margin-bottom: 1rem;
+}
+
+.section-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
