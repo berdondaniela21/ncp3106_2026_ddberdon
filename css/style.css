@@ -338,3 +338,13 @@
     margin-top: 1.5rem;
     border-radius: 8px;
 }
+
+/* ===== Listing ===== */
+.program-col ul ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.program-col ul ul li {
+    margin-bottom: 0.5rem;
+}
