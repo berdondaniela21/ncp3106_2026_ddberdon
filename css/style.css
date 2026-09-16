@@ -140,8 +140,9 @@ body {
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   min-height: 890px;
-  padding: 140px 60px 0 60px; /* Reduced bottom padding to 0 */
+  padding: 140px 60px 0 60px;
   overflow: hidden;
+  background: linear-gradient(to bottom, var(--red-deep) 0%, var(--black) 65%);
 }
 
 .hero::before {
@@ -155,6 +156,7 @@ body {
 .hero-copy {
   position: relative;
   z-index: 2;
+  margin-top: -400px;
 }
 
 .tag-chip {
@@ -211,14 +213,15 @@ h1.headline .accent {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -200px;
   height: 100%;
 }
 
 .hero-logo-img {
-  width: min(90%, 420px);
+  width: min(90%, 500px);
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 60px rgba(196,30,42,0.18));
+  filter: drop-shadow(0 0 60px rgba(244,240,232,0.35));
 }
 
 /* Tribal Band */
