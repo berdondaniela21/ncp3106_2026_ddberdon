@@ -474,6 +474,18 @@ h1.headline .accent {
   line-height: 1.6;
 }
 
+.explore-section .section-head {
+  border-bottom: 1px solid rgba(244,240,232,0.12);
+}
+
+.explore-section .section-head h2 .accent {
+  color: var(--red-bright);
+}
+
+.explore-section .section-head p {
+  color: var(--steel);
+}
+
 .pillar-grid {
   max-width: 1240px;
   margin: 0 auto;
@@ -585,8 +597,8 @@ footer {
 
 /* === HOME: INTRO + HIGHLIGHTS === */
 .intro-section {
-  background: var(--black);
-  color: var(--bone);
+  background: var(--bone);
+  color: var(--black);
   padding: 90px 48px 70px 48px;
 }
 
@@ -607,13 +619,13 @@ footer {
 }
 
 .intro-wrap h2 .accent {
-  color: var(--red-bright);
+  color: var(--red);
 }
 
 .intro-wrap p {
   font-size: 15px;
   line-height: 1.75;
-  color: var(--steel);
+  color: #4a4a4a;
   max-width: 520px;
 }
 
@@ -621,12 +633,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(244,240,232,0.1);
+  background: rgba(10,10,11,0.12);
   margin-top: 8px;
 }
 
 .highlight-stat {
-  background: var(--panel);
+  background: var(--bone);
   padding: 24px 22px;
 }
 
@@ -634,21 +646,21 @@ footer {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 900;
   font-size: 32px;
-  color: var(--red-bright);
+  color: var(--red);
   display: block;
 }
 
 .highlight-stat .label {
   font-size: 12px;
-  color: var(--steel);
+  color: #55524c;
   margin-top: 6px;
   line-height: 1.4;
 }
 
 /* === HOME: FEATURED / NAVIGATION SECTIONS === */
 .explore-section {
-  background: var(--bone);
-  color: var(--black);
+  background: var(--black);
+  color: var(--bone);
   padding: 100px 48px 120px 48px;
 }
 
@@ -658,20 +670,20 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: rgba(10,10,11,0.12);
+  background: rgba(244,240,232,0.1);
 }
 
 .explore-card {
-  background: var(--bone);
+  background: var(--black);
   padding: 32px 24px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--bone);
   display: block;
   transition: background .2s ease;
 }
 
 .explore-card:hover {
-  background: #eae5da;
+  background: var(--panel);
 }
 
 .explore-card .num {
@@ -679,7 +691,7 @@ footer {
   font-weight: 800;
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: var(--red);
+  color: var(--red-bright);
   display: block;
   margin-bottom: 18px;
 }
@@ -695,7 +707,7 @@ footer {
 
 .explore-card p {
   font-size: 13px;
-  color: #55524c;
+  color: var(--steel);
   line-height: 1.55;
 }
 
