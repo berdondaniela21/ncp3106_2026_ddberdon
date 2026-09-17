@@ -768,6 +768,42 @@ footer {
   color: var(--red);
 }
 
+/* === ABOUT PAGE ADDITIONS === */
+.prose-block p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4a4a4a;
+  max-width: 720px;
+}
+
+.program-section.single-col {
+  grid-template-columns: 1fr;
+}
+
+.program-col.wide {
+  max-width: 900px;
+}
+
+.career-col h2 {
+  margin-bottom: 22px;
+}
+
+.career-list li strong {
+  color: #1a1a1a;
+}
+
+@media (max-width: 880px) {
+  .program-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* === MEDIA QUERIES === */
 
 @media (max-width: 880px) {
