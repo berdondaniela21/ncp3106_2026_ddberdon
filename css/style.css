@@ -409,6 +409,16 @@ h1.headline .accent {
   list-style: none;
 }
 
+.career-list li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.career-list li a:hover {
+  color: var(--red-bright);
+  text-decoration: underline;
+}
+
 .career-list li {
   display: flex;
   align-items: center;
