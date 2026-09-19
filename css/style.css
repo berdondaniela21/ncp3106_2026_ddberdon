@@ -826,6 +826,15 @@ footer {
   z-index: 1;
 }
 
+.exec-image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: block;
+}
+
 /* === FACULTY === */
 .adviser-block {
   max-width: 900px;
