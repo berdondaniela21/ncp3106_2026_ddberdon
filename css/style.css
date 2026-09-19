@@ -814,6 +814,18 @@ footer {
   }
 }
 
+/* === SCPES === */
+
+.page-hero-image {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 800px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+}
+
 /* === FACULTY === */
 .adviser-block {
   max-width: 900px;
