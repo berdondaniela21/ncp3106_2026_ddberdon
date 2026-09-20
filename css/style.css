@@ -513,10 +513,16 @@ h1.headline .accent {
   padding: 36px 26px;
   position: relative;
   transition: background .25s ease;
+  cursor: pointer;
 }
 
 .pillar-card:hover {
   background: #eae5da;
+}
+
+.pillar-card:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: -2px;
 }
 
 .pillar-num {
@@ -693,10 +699,16 @@ footer {
   color: var(--bone);
   display: block;
   transition: background .2s ease;
+  cursor: pointer;
 }
 
 .explore-card:hover {
   background: var(--panel);
+}
+
+.explore-card:focus-visible {
+  outline: 2px solid var(--red-bright);
+  outline-offset: -2px;
 }
 
 .explore-card .num {
@@ -944,4 +956,240 @@ footer {
   .cta-band .cta-actions {
     justify-content: center;
   }
+}
+
+/* === EVENT / PROJECT MODAL (scrollable list) === */
+.event-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,11,0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.event-modal-overlay.active { display: flex; }
+
+.event-modal {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  max-width: 680px;
+  width: 100%;
+  max-height: 86vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(244,240,232,0.1);
+  color: var(--bone);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.event-modal-close:hover { background: var(--red-bright); }
+
+.event-modal-header {
+  padding: 26px 56px 20px 30px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.event-modal-header h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--bone);
+}
+
+.event-modal-scroll {
+  overflow-y: auto;
+  padding: 24px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.event-entry:not(:first-child) {
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.event-entry-title-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  background: var(--panel-2);
+  margin-bottom: 16px;
+}
+
+.event-entry h3 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: var(--bone);
+  margin-bottom: 4px;
+}
+
+.event-entry-date {
+  color: var(--red-bright);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.event-entry-caption {
+  color: var(--steel);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.event-entry-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.event-entry-gallery img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity .15s ease;
+}
+
+.event-entry-gallery img:hover {
+  opacity: 0.85;
+}
+
+/* === IMAGE LIGHTBOX === */
+.image-lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1100;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.image-lightbox-overlay.active { display: flex; }
+
+.image-lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(244,240,232,0.15);
+  color: var(--bone);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1101;
+}
+.image-lightbox-close:hover { background: var(--red-bright); }
+
+/* === CAREERS / SPECIALIZATION ACCORDION === */
+.career-accordion {
+  max-width: 860px;
+  margin-top: 30px;
+}
+
+.career-accordion .accordion-item {
+  background: var(--bone);
+  border: none;
+  border-bottom: 1px solid rgba(10,10,11,0.12);
+  border-radius: 0 !important;
+}
+
+.career-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.career-accordion .accordion-button {
+  background: transparent;
+  color: var(--black);
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  padding: 22px 4px;
+  box-shadow: none !important;
+}
+
+.career-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: var(--red);
+}
+
+.career-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.career-accordion .accordion-button::after {
+  filter: invert(21%) sepia(90%) saturate(2500%) hue-rotate(345deg) brightness(0.9);
+}
+
+.career-num {
+  color: var(--red);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin-right: 12px;
+}
+
+.career-accordion .accordion-button:not(.collapsed) .career-num {
+  color: var(--red-bright);
+}
+
+.career-accordion .accordion-body {
+  padding: 0 4px 26px 4px;
+  color: #4a4a4a;
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+
+.career-accordion .accordion-body p {
+  margin-bottom: 10px;
+}
+
+.career-accordion .accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.career-accordion .accordion-body strong {
+  color: #1a1a1a;
 }

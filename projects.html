@@ -53,41 +53,41 @@
       <p>What CpE students design, build, and defend across their four years.</p>
     </div>
     <div class="explore-grid">
-      <a href="#" class="explore-card">
+      <div class="explore-card" data-project="embedded" tabindex="0" role="button">
         <span class="num">01 / EMBEDDED</span>
         <h3>Embedded Systems</h3>
         <p>Microcontroller-based builds &mdash; from sensor rigs to custom firmware for dedicated devices.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="iot" tabindex="0" role="button">
         <span class="num">02 / IOT</span>
         <h3>IoT Applications</h3>
         <p>Connected devices and systems that collect, send, and act on real-world data.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="robotics" tabindex="0" role="button">
         <span class="num">03 / ROBOTICS</span>
         <h3>Robotics</h3>
         <p>Sensor, actuator, and control-system integration for automated and autonomous machines.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="software" tabindex="0" role="button">
         <span class="num">04 / SOFTWARE</span>
         <h3>Software Systems</h3>
         <p>Applications, tools, and platforms built to solve real academic or campus problems.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="ml" tabindex="0" role="button">
         <span class="num">05 / ML</span>
         <h3>Machine Learning Projects</h3>
         <p>Models and intelligent systems applied to classification, prediction, and automation tasks.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="design" tabindex="0" role="button">
         <span class="num">06 / DESIGN</span>
         <h3>Design Projects</h3>
         <p>Circuit and system design work grounded in engineering standards and constraints.</p>
-      </a>
-      <a href="#" class="explore-card">
+      </div>
+      <div class="explore-card" data-project="research" tabindex="0" role="button">
         <span class="num">07 / RESEARCH</span>
         <h3>Research Projects</h3>
         <p>Original investigations that feed into the department's research and innovation output.</p>
-      </a>
+      </div>
     </div>
   </section>
 
@@ -108,5 +108,23 @@
     </div>
   </footer>
 
+  <!-- PROJECT MODAL -->
+  <div class="event-modal-overlay" id="projectModalOverlay">
+    <div class="event-modal" role="dialog" aria-modal="true" aria-labelledby="projectModalCategoryTitle">
+      <button class="event-modal-close" id="projectModalClose" aria-label="Close">&times;</button>
+      <div class="event-modal-header">
+        <h2 id="projectModalCategoryTitle"></h2>
+      </div>
+      <div class="event-modal-scroll" id="projectModalScroll"></div>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX -->
+  <div class="image-lightbox-overlay" id="imageLightboxOverlay">
+    <button class="image-lightbox-close" id="imageLightboxClose" aria-label="Close">&times;</button>
+    <img class="image-lightbox-img" id="imageLightboxImg" src="" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

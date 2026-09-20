@@ -137,22 +137,22 @@
       <p>What SCPES runs throughout the school year.</p>
     </div>
     <div class="pillar-grid">
-      <div class="pillar-card">
+      <div class="pillar-card" data-event="workshops" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="pillar-num">01 / TECH</span>
         <h3>Workshops &amp; Bootcamps</h3>
         <p>Hands-on sessions on hardware, software, and tools students use in their projects.</p>
       </div>
-      <div class="pillar-card">
+      <div class="pillar-card" data-event="hackathons" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="pillar-num">02 / COMPETE</span>
         <h3>Hackathons &amp; Quiz Bowls</h3>
         <p>Inter-school competitions where CpE Warriors put their skills to the test.</p>
       </div>
-      <div class="pillar-card">
+      <div class="pillar-card" data-event="assemblies" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="pillar-num">03 / COMMUNITY</span>
         <h3>General Assemblies &amp; Socials</h3>
         <p>Org-wide gatherings that keep the CpE community connected.</p>
       </div>
-      <div class="pillar-card">
+      <div class="pillar-card" data-event="outreach" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="pillar-num">04 / OUTREACH</span>
         <h3>Outreach Programs</h3>
         <p>Community extension activities aligned with UE's social responsibility values.</p>
@@ -177,5 +177,23 @@
     </div>
   </footer>
 
+  <!-- EVENT MODAL -->
+  <div class="event-modal-overlay" id="eventModalOverlay">
+    <div class="event-modal" role="dialog" aria-modal="true" aria-labelledby="eventModalCategoryTitle">
+      <button class="event-modal-close" id="eventModalClose" aria-label="Close">&times;</button>
+      <div class="event-modal-header">
+        <h2 id="eventModalCategoryTitle"></h2>
+      </div>
+      <div class="event-modal-scroll" id="eventModalScroll"></div>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX -->
+  <div class="image-lightbox-overlay" id="imageLightboxOverlay">
+    <button class="image-lightbox-close" id="imageLightboxClose" aria-label="Close">&times;</button>
+    <img class="image-lightbox-img" id="imageLightboxImg" src="" alt="">
+  </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

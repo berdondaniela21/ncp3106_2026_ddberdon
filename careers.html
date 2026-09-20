@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CPE Warriors — Society of Computer Engineering Students</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -47,121 +48,156 @@
   </p><br>
 </section>
 
-<section class="program-section">
-    <div class="program-col">
-        <span>
-            <div class="eyebrow"><span class="line"></span>Career and Job Opportunities</div>
-            <h2 class="display">Common <span class="accent">Career Paths</span></h2>
-        </span>
+<section class="program-section single-col">
+    <div class="program-col wide">
+        <div class="eyebrow"><span class="line"></span>Career and Job Opportunities</div>
+        <h2 class="display">Common <span class="accent">Career Paths</span></h2>
 
-        <ul>
-            <li>
-                <p>
-                  <strong>Software Developer/Software Engineer:</strong><br>
-                </p>
-                <p>
-                  <strong>Primarily Responsibilities:</strong> Designing, coding, testing, and maintaining software
-                  application across various platforms. This role involves writing efficient code,
-                  debugging, and collaborating with cross-functional teams to develop user-friendly and
-                  reliable software solutions. <br>
-                 <strong>Typical industries or employers:</strong> Tech companies, startups, financial institutions,
-                healthcare providers, government agencies, and consulting firms.<br>
-              </li>
-            <li>
-              <p> 
-                <strong>Hardware Engineer:</strong><br>
-              </p>
-              <p>
-                <strong>Primarily Responsibilities:</strong> Designing, developing, testing, and improving computer hardware components such as processors, circuit boards, and embedded systems. <br>
-                <strong>Typical industries or employers:</strong> Semiconductor companies, consumer electronics manufacturers, Telecommunications firms, and aerospace industries.<br>     
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Embedded Systems Engineer:</strong><br>
-              </p>
-              <p>
-                <strong>Primarily Responsibilities:</strong> Developing software and hardware solutions for embedded
-                devices such as IoT gadgets, automotive control systems, medical devices, and consumer electronics. This role requires
-                expertise in real-time operating systems and low-level programming.<br>
-                <strong>Typical industries or employers:</strong> Automotive, medical devices, consumer electronics, and industrial automation companies.<br>
-              </p>
-            </li>
-              <li>
-                <p>
-                <strong>Network and Systems Administrator:</strong><br>
-                </p>
-                <p>
-                  <strong>Primarily Responsibilities:</strong>  Managing and maintaining computer networks, servers, and infrastructure to ensure security, efficiency, and uptime.
-                  This role involes configuring hardware, troubleshooting issues, and implementing security protocols.<br>
-                  <strong>Typical industries or employers:</strong> Corporate IT departments, government agencies,
-                educational institutions, and managed service provideers. 
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Cybersecurity Analyst/Engineer:</strong><br>
-                </p>
-                <p>
-                  <strong>Primarily Responsibililties:</strong> Protecting computer systems and networks from cyber
-                  threats by implementing security measures, monitoring for breachers, and responding to incidents. This role involves vulnerability assessment and security protocol development.<br>
-                  <strong>Typical industries or employers:</strong> Financial services, government agencies, healthcare, technology firms, and consulting companies.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Data Scientist/Data Analyst</strong>
-                </p>
-                <p>
-                  <strong>Primary Responsibilities:</strong> Analyzing large datasets to extract insights, develop
-                  predictive models, and support decision-making processes. This role involces programming, statistical analysis
-                  , and visualization skills.<br>
-                  <strong>Typical industries or employers:</strong> Tech companies, finance, healthcare, marketing firms, and reseasrch institutions.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Robotics Engineer:</strong>
-                </p>
-                <p>
-                  <strong>Primary responsibilities:</strong> Designing and developing robotic systems for manufacturing,
-                  healthcare, exploration, or consumer applications. This involves integrating sensors, actuators, control systems, and software.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Software Quality Assurance (QA) Engineer</strong>
-                </p>
-                <p>
-                <strong>Primarily Responsibilities:</strong> Testing software applications to identify bugs, ensure
-                quality standards, and improve user experience. QA engineers develop test plans,
-                automate testing, and collaborate with developers. <br>
-                <strong>Typical industries or employers:</strong> Software firms, tech startups, financial institutions,
-                and enterprise IT departments.
-                </p>   
-              </li>
-              <li>
-                <p>
-                  <strong>Research and Development (R&D) Engineer</strong>
-                </p>
-                <p>
-                  <strong>Primary responsibilities:</strong> Innovating new technologies, developing prototypes, and
-                  conducting experiments to push the boundaries of current hardware and software capabilities.<br>
-                  <strong>Typical industries or employers:</strong> Universities, government research labs, tech giants, and startups focused on innovation.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>IT Project Manager/Technical Lead</strong>
-                </p>
-                <p>
-                  <strong>Primary responsibilities:</strong> Overseeing technology projects, coordinatign teams, managing budgets, and ensuring timely
-                  delivery of solutions. This role combines technical expertise with leadership and communication skills.<br>
-                  <strong>Typical industries or employers:</strong> Consulting firms, large corporations, government agencies, and startups.
-                </p>
-              </li>
-        </ul>
+        <div class="accordion career-accordion" id="careerAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading0">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                <span class="career-num">01</span>Software Developer / Software Engineer
+              </button>
+            </h3>
+            <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Designing, coding, testing, and maintaining software applications across various platforms. This role involves writing efficient code, debugging, and collaborating with cross-functional teams to develop user-friendly and reliable software solutions.</p>
+                <p><strong>Typical industries or employers:</strong> Tech companies, startups, financial institutions, healthcare providers, government agencies, and consulting firms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                <span class="career-num">02</span>Hardware Engineer
+              </button>
+            </h3>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Designing, developing, testing, and improving computer hardware components such as processors, circuit boards, and embedded systems.</p>
+                <p><strong>Typical industries or employers:</strong> Semiconductor companies, consumer electronics manufacturers, telecommunications firms, and aerospace industries.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                <span class="career-num">03</span>Embedded Systems Engineer
+              </button>
+            </h3>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Developing software and hardware solutions for embedded devices such as IoT gadgets, automotive control systems, medical devices, and consumer electronics. This role requires expertise in real-time operating systems and low-level programming.</p>
+                <p><strong>Typical industries or employers:</strong> Automotive, medical devices, consumer electronics, and industrial automation companies.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                <span class="career-num">04</span>Network and Systems Administrator
+              </button>
+            </h3>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Managing and maintaining computer networks, servers, and infrastructure to ensure security, efficiency, and uptime. This role involves configuring hardware, troubleshooting issues, and implementing security protocols.</p>
+                <p><strong>Typical industries or employers:</strong> Corporate IT departments, government agencies, educational institutions, and managed service providers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                <span class="career-num">05</span>Cybersecurity Analyst / Engineer
+              </button>
+            </h3>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Protecting computer systems and networks from cyber threats by implementing security measures, monitoring for breaches, and responding to incidents. This role involves vulnerability assessment and security protocol development.</p>
+                <p><strong>Typical industries or employers:</strong> Financial services, government agencies, healthcare, technology firms, and consulting companies.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                <span class="career-num">06</span>Data Scientist / Data Analyst
+              </button>
+            </h3>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Analyzing large datasets to extract insights, develop predictive models, and support decision-making processes. This role involves programming, statistical analysis, and visualization skills.</p>
+                <p><strong>Typical industries or employers:</strong> Tech companies, finance, healthcare, marketing firms, and research institutions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                <span class="career-num">07</span>Robotics Engineer
+              </button>
+            </h3>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Designing and developing robotic systems for manufacturing, healthcare, exploration, or consumer applications. This involves integrating sensors, actuators, control systems, and software.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                <span class="career-num">08</span>Software Quality Assurance (QA) Engineer
+              </button>
+            </h3>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Testing software applications to identify bugs, ensure quality standards, and improve user experience. QA engineers develop test plans, automate testing, and collaborate with developers.</p>
+                <p><strong>Typical industries or employers:</strong> Software firms, tech startups, financial institutions, and enterprise IT departments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                <span class="career-num">09</span>Research and Development (R&amp;D) Engineer
+              </button>
+            </h3>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Innovating new technologies, developing prototypes, and conducting experiments to push the boundaries of current hardware and software capabilities.</p>
+                <p><strong>Typical industries or employers:</strong> Universities, government research labs, tech giants, and startups focused on innovation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                <span class="career-num">10</span>IT Project Manager / Technical Lead
+              </button>
+            </h3>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#careerAccordion">
+              <div class="accordion-body">
+                <p><strong>Primary responsibilities:</strong> Overseeing technology projects, coordinating teams, managing budgets, and ensuring timely delivery of solutions. This role combines technical expertise with leadership and communication skills.</p>
+                <p><strong>Typical industries or employers:</strong> Consulting firms, large corporations, government agencies, and startups.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
 </section>
+
 <!-- FOOTER-->
 <footer>
   <div class="footer-top">
@@ -179,5 +215,6 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
