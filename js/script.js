@@ -55,14 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     hackathons: [
       {
-        titleImg: 'assets/scpes/events/hackathons-1-title.jpg',
-        name: 'CpE Hackathon 2026',
-        date: 'TBA',
-        caption: 'Add caption here.',
+        titleImg: 'assets/scpes/HackAndQB/2.4.jpg',
+        name: 'IoT Conference 2025: Packet Hacks 💻✨',
+        date: 'September 14, 2025',
+        caption: 'IoT Conference 2025 - Day 1 & 2',
         images: [
-          'assets/scpes/events/hackathons-1-1.jpg',
-          'assets/scpes/events/hackathons-1-2.jpg',
-          'assets/scpes/events/hackathons-1-3.jpg'
+          'assets/scpes/HackAndQB/2.4.jpg',
+          'assets/scpes/HackAndQB/2.5.jpg',
+          'assets/scpes/HackAndQB/2.1.jpg',
+          'assets/scpes/HackAndQB/2.2.jpg',
+          'assets/scpes/HackAndQB/2.3.jpg'
         ]
       }
     ],
