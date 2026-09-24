@@ -26,21 +26,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const eventData = {
     workshops: [
       {
-        titleImg: 'assets/scpes/events/workshops-1-title.jpg',
-        name: 'Arduino Basics Bootcamp',
-        date: 'March 14, 2026',
-        caption: 'Add caption here.',
+        titleImg: 'assets/scpes/ActsAndEvents/1.1.jpg',
+        name: '𝗙𝗥𝗢𝗠 𝗜𝗗𝗘𝗔𝗦 𝗧𝗢 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘𝗦: 𝗔 𝗙𝗜𝗚𝗠𝗔 𝗗𝗘𝗦𝗜𝗚𝗡 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣 💻✨',
+        date: 'September 23, 2026',
+        caption: `𝗙𝗥𝗢𝗠 𝗜𝗗𝗘𝗔𝗦 𝗧𝗢 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘𝗦: 𝗔 𝗙𝗜𝗚𝗠𝗔 𝗗𝗘𝗦𝗜𝗚𝗡 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣 💻✨
+                  Ready to turn your ideas into creative and engaging designs? Join us later for our Figma Design Workshop and explore how ideas can be transformed into interactive digital interfaces! 🎨💡
+                  We are excited to have 𝐄𝐧𝐠𝐫. 𝐉𝐨𝐞𝐡𝐦𝐞𝐥 𝐉𝐡𝐨𝐧 𝐂𝐨𝐫𝐚𝐥, one of our faculty members, who will be sharing his knowledge and expertise in Figma and digital design!
+                  📅 September 23, 2026
+                  📍 LB 212
+                  ⏰ 5:00 PM – 6:30 PM
+                  Design it. Create it. Bring your ideas to life. 🚀
+                  See you later, CpE Warriors! 👋
+                  #UEat80 #AllOutCPE #UESCpES #EngineeredForExcellence #FoundationWeek`,
         images: [
-          'assets/scpes/meet-the-exec.jpg',
+          'assets/scpes/ActsAndEvents/1.1.jpg',
+          'assets/scpes/ActsAndEvents/1.2.jpg',
         ]
       },
       {
-        titleImg: 'assets/scpes/events/workshops-1-title.jpg',
+        titleImg: 'assets/scpes/ActsAndEvents/1.3.jpg',
         name: 'Arduino Basics Bootcamp',
         date: 'March 14, 2026',
         caption: 'Add caption here.',
         images: [
-          'assets/scpes/meet-the-exec.jpg',
+          'assets/scpes/ActsAndEvents/1.4.jpg',
         ]
       },
     ],
