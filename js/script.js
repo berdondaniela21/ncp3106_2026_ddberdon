@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
         titleImg: 'assets/scpes/ActsAndEvents/1.1.jpg',
         name: '𝗙𝗥𝗢𝗠 𝗜𝗗𝗘𝗔𝗦 𝗧𝗢 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘𝗦: 𝗔 𝗙𝗜𝗚𝗠𝗔 𝗗𝗘𝗦𝗜𝗚𝗡 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣 💻✨',
         date: 'September 23, 2026',
-        caption: `𝗙𝗥𝗢𝗠 𝗜𝗗𝗘𝗔𝗦 𝗧𝗢 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘𝗦: 𝗔 𝗙𝗜𝗚𝗠𝗔 𝗗𝗘𝗦𝗜𝗚𝗡 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣 💻✨
-                  Ready to turn your ideas into creative and engaging designs? Join us later for our Figma Design Workshop and explore how ideas can be transformed into interactive digital interfaces! 🎨💡
-                  We are excited to have 𝐄𝐧𝐠𝐫. 𝐉𝐨𝐞𝐡𝐦𝐞𝐥 𝐉𝐡𝐨𝐧 𝐂𝐨𝐫𝐚𝐥, one of our faculty members, who will be sharing his knowledge and expertise in Figma and digital design!
-                  📅 September 23, 2026
-                  📍 LB 212
-                  ⏰ 5:00 PM – 6:30 PM
-                  Design it. Create it. Bring your ideas to life. 🚀
-                  See you later, CpE Warriors! 👋
+        caption: `𝗙𝗥𝗢𝗠 𝗜𝗗𝗘𝗔𝗦 𝗧𝗢 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘𝗦: 𝗔 𝗙𝗜𝗚𝗠𝗔 𝗗𝗘𝗦𝗜𝗚𝗡 𝗪𝗢𝗥𝗞𝗦𝗛𝗢𝗣 💻✨ \n
+                  Ready to turn your ideas into creative and engaging designs? Join us later for our Figma Design Workshop and explore how ideas can be transformed into interactive digital interfaces! 🎨💡\n
+                  We are excited to have 𝐄𝐧𝐠𝐫. 𝐉𝐨𝐞𝐡𝐦𝐞𝐥 𝐉𝐡𝐨𝐧 𝐂𝐨𝐫𝐚𝐥, one of our faculty members, who will be sharing his knowledge and expertise in Figma and digital design!\n
+                  📅 September 23, 2026\n
+                  📍 LB 212\n
+                  ⏰ 5:00 PM – 6:30 PM\n
+                  Design it. Create it. Bring your ideas to life. 🚀\n
+                  See you later, CpE Warriors! 👋\n
                   #UEat80 #AllOutCPE #UESCpES #EngineeredForExcellence #FoundationWeek`,
         images: [
           'assets/scpes/ActsAndEvents/1.1.jpg',

@@ -1061,6 +1061,7 @@ footer {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 16px;
+  white-space: pre-line;
 }
 
 .event-entry-gallery {
