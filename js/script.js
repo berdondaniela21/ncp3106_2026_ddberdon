@@ -1,3 +1,25 @@
+// Theme toggle (light / dark)
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    if (toggle) toggle.textContent = theme === 'light' ? '☀️' : '🌙';
+  }
+
+  // Apply saved theme (defaults to your current dark look)
+  setTheme(localStorage.getItem('theme') || 'dark');
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      setTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+    });
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Active link highlighter for Navbar
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
