@@ -93,14 +93,24 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     assemblies: [
       {
-        titleImg: 'assets/scpes/events/assemblies-1-title.jpg',
-        name: 'General Assembly Sem 1',
-        date: 'TBA',
-        caption: 'Add caption here.',
+        titleImg: 'assets/scpes/GA_S/FH.1.jpg',
+        name: '𝗙𝗥𝗘𝗦𝗛𝗠𝗔𝗡 𝗛𝗨𝗗𝗗𝗟𝗘 𝗥𝗘𝗖𝗔𝗣 📸✨',
+        date: 'September 17, 2026',
+        caption: `𝗙𝗥𝗘𝗦𝗛𝗠𝗔𝗡 𝗛𝗨𝗗𝗗𝗟𝗘 𝗥𝗘𝗖𝗔𝗣 📸✨\n
+                  A day filled with laughter, games, new friendships, and unforgettable moments! Our CPE Freshies came together to kick off their journey with fun, excitement, and good vibes all around.\n
+                  Here’s a look back at some of the moments that made our Freshman Huddle one to remember! 🫶\n
+                  Your freshman journey is just getting started, so let’s make it one to remember! 🚀\n
+                  📆 September 17, Thursday\n
+                  📍 LB 213 \n
+                  📸: JCORNITA\n
+                  #UEat80 #AllOutCPE #UESCpES #EngineeredForExcellence #FoundationWeek`,
         images: [
-          'assets/scpes/events/assemblies-1-1.jpg',
-          'assets/scpes/events/assemblies-1-2.jpg',
-          'assets/scpes/events/assemblies-1-3.jpg'
+          'assets/scpes/GA_S/FH.1.jpg',
+          'assets/scpes/GA_S/FH-2.jpg',
+          'assets/scpes/GA_S/FH-3.jpg',
+          'assets/scpes/GA_S/FH-4.jpg',
+          'assets/scpes/GA_S/FH-5.jpg',
+          'assets/scpes/GA_S/FH-6.jpg'
         ]
       },
       {
@@ -108,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         name: 'Into the CpE-Verse: General Assembly 2025 💻✨',
         date: 'September 09, 2025',
         caption: `✨ 𝑅𝑒𝑎𝑑𝑦 𝑡𝑜 𝑒𝑥𝑝𝑙𝑜𝑟𝑒 𝑡ℎ𝑒 𝐶𝑝𝐸-𝑉𝑒𝑟𝑠𝑒? 🚀 \n
-                    Tomorrow’s the big day, CpE fam! Our General Assembly 2025 is finally here! \n
+                    Tomorrow’s the big day, CpE fam! Our General Assembly 2025 is finally here!
                     A space where we’ll connect, celebrate, and kick off another exciting year together.\n
                     📅 September 9, 2025 | 1:00 PM \n
                     📍 LB 4th Floor Center for Technology & Education \n
