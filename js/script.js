@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'assets/scpes/HackAndQB/2.3.jpg'
         ]
       }
+
     ],
     assemblies: [
       {
@@ -100,6 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
           'assets/scpes/events/assemblies-1-1.jpg',
           'assets/scpes/events/assemblies-1-2.jpg',
           'assets/scpes/events/assemblies-1-3.jpg'
+        ]
+      },
+      {
+        titleImg: 'assets/scpes/GA_S/GA25.jpg',
+        name: 'Into the CpE-Verse: General Assembly 2025 💻✨',
+        date: 'September 09, 2025',
+        caption: `✨ 𝑅𝑒𝑎𝑑𝑦 𝑡𝑜 𝑒𝑥𝑝𝑙𝑜𝑟𝑒 𝑡ℎ𝑒 𝐶𝑝𝐸-𝑉𝑒𝑟𝑠𝑒? 🚀 \n
+                    Tomorrow’s the big day, CpE fam! Our General Assembly 2025 is finally here! \n
+                    A space where we’ll connect, celebrate, and kick off another exciting year together.\n
+                    📅 September 9, 2025 | 1:00 PM \n
+                    📍 LB 4th Floor Center for Technology & Education \n
+                    Dont miss out on the fun, surprises, and the start of this cosmic journey! 🌠 \n
+                    #CPENonStop #CpEVerse #CpEGeneralAssembly2025 #EngineeredForExcellence`,
+        images: [
+          'assets/scpes/GA_S/GA25.jpg',
+          'assets/scpes/GA_S/GA-25-1.jpg',
+          'assets/scpes/GA_S/GA-25-2.jpg',
+          'assets/scpes/GA_S/GA-25-3.jpg',
+          'assets/scpes/GA_S/GA-25-4.jpg',
+          'assets/scpes/GA_S/GA-25-5.jpg'
         ]
       }
     ],
