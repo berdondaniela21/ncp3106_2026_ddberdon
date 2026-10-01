@@ -1194,3 +1194,106 @@ footer {
 .career-accordion .accordion-body strong {
   color: #1a1a1a;
 }
+
+/* === LIGHT THEME === */
+[data-theme="light"] {
+  --black: #f4f0e8;      
+  --bone: #14141a;      
+  --panel: #ffffff;
+  --panel-2: #ebe6db;
+  --steel: #5f5e66;      
+  --red-deep: #f0d5d3;   
+  --line: rgba(10,10,11,0.12);
+}
+
+/* Navbar */
+[data-theme="light"] .navbar {
+  background: #fff;
+  border-bottom: 1px solid rgba(10,10,11,0.1);
+}
+
+/* Hero */
+[data-theme="light"] .hero-logo-img {
+  filter: drop-shadow(0 0 60px rgba(10,10,11,0.2));
+}
+[data-theme="light"] .page-hero-badge {
+  background: #fff;
+  border-color: rgba(10,10,11,0.15);
+}
+[data-theme="light"] .btn-outline {
+  border-color: rgba(10,10,11,0.3);
+}
+
+
+[data-theme="light"] .pillars,
+[data-theme="light"] .intro-section {
+  background: #fff;
+  color: #0a0a0b;
+}
+[data-theme="light"] .pillar-card,
+[data-theme="light"] .highlight-stat,
+[data-theme="light"] .career-accordion .accordion-item {
+  background: #fff;
+}
+[data-theme="light"] .pillar-card:hover {
+  background: #f4f0e8;
+}
+[data-theme="light"] .program-section {
+  background: #fff;
+}
+[data-theme="light"] .tribal-band {
+  background: #fff;
+}
+[data-theme="light"] .career-accordion .accordion-button {
+  color: #0a0a0b;
+}
+[data-theme="light"] .career-accordion .accordion-button:not(.collapsed) {
+  color: var(--red);
+}
+
+
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .cta-band {
+  color: #fff;
+}
+[data-theme="light"] .cta-band .btn-light {
+  background: #fff;
+  color: #0a0a0b;
+}
+[data-theme="light"] .cta-band .btn-outline {
+  border-color: #fff;
+  color: #fff;
+}
+[data-theme="light"] .cta-band .btn-outline:hover {
+  background: #fff;
+  color: var(--red);
+}
+
+/* Smooth switching */
+body, .navbar, .hero, .explore-card, footer {
+  transition: background-color .3s ease, color .3s ease;
+}
+
+/* Toggle button */
+#theme-toggle {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--bone);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+}
+#theme-toggle:hover {
+  border-color: var(--red-bright);
+}
+
+[data-theme="light"] .image-lightbox-close {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+[data-theme="light"] .event-modal-close {
+  background: rgba(10,10,11,0.08);
+}
